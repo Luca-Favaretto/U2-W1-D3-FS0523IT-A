@@ -167,7 +167,9 @@ main > h2 {
     margin: 5px;
   }
   main {
+    overflow-y: auto;
     height: 100vh;
+    width: calc(100% - 170);
   }
   .cards {
     flex-wrap: nowrap;
