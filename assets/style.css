@@ -139,7 +139,7 @@ main > h2 {
   nav .btn-nav:nth-child(3) {
     order: -1;
     flex-grow: 1;
-    min-width: 300px;
+    min-width: 280px;
     justify-content: center;
     gap: 34px;
   }
