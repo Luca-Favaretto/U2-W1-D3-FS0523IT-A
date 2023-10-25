@@ -49,6 +49,7 @@ nav .btn-nav img {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow-x: auto;
 }
 .card {
   background-color: #fbf7e3;
@@ -62,6 +63,7 @@ nav .btn-nav img {
   gap: 10px;
   font-weight: 500;
   flex-grow: 1;
+  min-width: 260px;
 }
 .card img {
   width: 100%;
@@ -126,15 +128,20 @@ main > h2 {
     border-radius: 50px;
     height: unset;
     margin: 1rem;
+    padding: 1rem;
   }
   nav .btn-nav {
-    width: 35%;
-    margin: 1.2rem;
+    width: 40%;
+    margin: 6px;
+    text-align: center;
   }
 
   nav .btn-nav:nth-child(3) {
     order: -1;
-    margin-inline: 4rem;
+    flex-grow: 1;
+    min-width: 300px;
+    justify-content: center;
+    gap: 34px;
   }
   h1 {
     text-align: center;
