@@ -11,6 +11,7 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: 800;
+  margin-top: 0px;
 }
 main {
   padding: 1rem;
@@ -127,7 +128,7 @@ main > h2 {
   }
   nav .btn-nav {
     width: 35%;
-    margin: 1rem;
+    margin: 1.2rem;
   }
 
   nav .btn-nav:nth-child(3) {
@@ -149,13 +150,37 @@ main > h2 {
   nav {
     flex-direction: column;
     width: unset;
+    height: 100vh;
+    justify-content: flex-start;
   }
   nav .btn-nav:nth-child(3) {
+    flex-basis: unset;
     order: -1;
+  }
+  nav .btn-nav {
+    flex-basis: unset;
+    width: 10rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  main {
+    height: 100vh;
+  }
+  .cards {
+    flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .article div:last-child {
     order: 0;
+  }
+  .article {
+    flex-direction: unset;
+  }
+  .article div img {
+    min-width: 500px;
   }
 }
