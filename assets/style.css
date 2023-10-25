@@ -125,6 +125,7 @@ main > h2 {
     flex-wrap: wrap;
     border-radius: 50px;
     height: unset;
+    margin: 1rem;
   }
   nav .btn-nav {
     width: 35%;
